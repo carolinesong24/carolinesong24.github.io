@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>caroline song</title>
+    <link rel="stylesheet" type="text/css" href="../main.css" />
+    <link rel="stylesheet" href="https://use.typekit.net/fad2mdo.css" />
+    <script type="text/javascript" src="../jquery.js"></script>
+
+    <!--    switch between hamburger and x-->
+    <script>
+      $(document).ready(function() {
+        $("#hamburger").click(function() {
+          $("#overlay").toggleClass("press");
+        });
+      });
+    </script>
+    <script>
+      $(document).ready(function() {
+        $("#hamburger").click(function() {
+          $("#mobile-links").toggleClass("on");
+          $("#hamburger").toggleClass("switch");
+        });
+      });
+    </script>
+  </head>
+  <body>
+  <div id="overlay"></div>
+   <div class="left-column">
+       <div id="home-blurb">
+           <h1>caroline song :-)</h1>
+           <p>communications designer @ carnegie mellon
+            <br>
+            <br>
+            design + writing
+            </p>
+            <p class="links-web">
+            <a href="../resume.pdf">resume &#8594;</a>
+            <br>
+            <a href="https://www.linkedin.com/in/caroline-song-590057187/" target="_blank">linkedin &#8594;</a>
+            </p>
+       </div>
+    <!-- DESKTOP NAV -->
+       <nav class="nav-container-main">
+           <div class="navbar">
+                  <div class="links-container">
+                      <ul class="links">
+                         <li><a href="../index.html" class="active-page">work</a></li>
+                         <li><a href="play.html">play</a></li>
+                         <li><a href="about.html">about</a></li>
+                      </ul>
+                  </div>
+           </div>
+       </nav>
+    </div>
+    <div class="hamburger-container">
+      <div class="hamburger links">
+        <a href="#" id="hamburger">
+          <div></div>
+          <div></div>
+          <div></div>
+        </a>
+        <!-- MOBILE NAV -->
+        <div class="mobile-links-container">
+          <div id="mobile-links">
+            <li><a href="../index.html" class="active-page">work</a></li>
+            <li><a href="play.html">play</a></li>
+            <li><a href="about.html">about</a></li>
+          </div>
+        </div>
+      </div>
+    </div>
+<!--    CONTENT-->
+    <div class="right-column">
+        <div class="mobile-intro">
+        <div id="mobile-blurb">
+            <h1>caroline song :-)</h1>
+            <p>communications designer @ carnegie mellon</p>
+        </div>
+    </div>
+    <!--CONTENT BEGINS HERE-->
+        <div class="white-container-play">
+             <img class="full-size" src="../Images/Type-Pictures/leta.jpg">
+            <img class="full-size" src="../Images/Type-Pictures/personal.jpg">
+<!--            piping plover animation embed-->
+            <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/437967686?title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+        </div>
+                <div class="white-container">
+            <div class="wrap-text">
+                <div class="left-title">
+                   <span class="title-span">
+                   Type Explorations
+                   </span>
+                   <br>
+                </div>
+                <div class="right">
+                    <p>A series of typographic explorations guided by class prompts, client work, and/or various independent experiments.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+  </body>
+</html>
