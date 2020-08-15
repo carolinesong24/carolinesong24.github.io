@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>caroline song</title>
+    <link rel="stylesheet" type="text/css" href="../main.css" />
+    <link rel="stylesheet" href="https://use.typekit.net/fad2mdo.css" />
+    <link rel="icon" href="../Images/icon.png">
+    <script type="text/javascript" src="../jquery.js"></script>
+
+    <!--    switch between hamburger and x-->
+    <script>
+      $(document).ready(function() {
+        $("#hamburger").click(function() {
+          $("#overlay").toggleClass("press");
+        });
+      });
+    </script>
+    <script>
+      $(document).ready(function() {
+        $("#hamburger").click(function() {
+          $("#mobile-links").toggleClass("on");
+          $("#hamburger").toggleClass("switch");
+        });
+      });
+    </script>
+  </head>
+  <body>
+   <div id="overlay"></div>
+   <div class="left-column">
+       <div id="home-blurb">
+           <h1>caroline song :-)</h1>
+           <p>communications designer @ carnegie mellon
+            <br>
+            <br>
+            design + writing
+            <br>
+            <br>
+            currently @ <a class="work-link"href="https://keepyourcadence.com/" target="_blank">cadence</a> + <br><a class="work-link" href="https://thexperiential.com/" target="_blank">th experiential</a>
+            </p>
+            <p class="links-web">
+            <a href="../resume.pdf" target="_blank">resume &#8594;</a>
+            <br>
+            <a href="https://www.linkedin.com/in/caroline-song-590057187/" target="_blank">linkedin &#8594;</a>
+            </p>
+       </div>
+    <!-- DESKTOP NAV -->
+       <nav class="nav-container-main">
+           <div class="navbar">
+                  <div class="links-container">
+                      <ul class="links">
+                         <li><a href="../index.html">work</a></li>
+                         <li><a href="play.html" class="active-page">play</a></li>
+                         <li><a href="about.html">about</a></li>
+                      </ul>
+                  </div>
+           </div>
+       </nav>
+    </div>
+    <div class="hamburger-container">
+      <div class="hamburger links">
+        <a href="#" id="hamburger">
+          <div></div>
+          <div></div>
+          <div></div>
+        </a>
+        <!-- MOBILE NAV -->
+        <div class="mobile-links-container">
+          <div id="mobile-links">
+            <li><a href="../index.html">work</a></li>
+            <li><a href="play.html" class="active-page">play</a></li>
+            <li><a href="about.html">about</a></li>
+          </div>
+        </div>
+      </div>
+    </div>
+<!--    CONTENT-->
+    <div class="right-column">
+        <div class="mobile-intro">
+            <div id="mobile-blurb">
+                <h1>caroline song :-)</h1>
+                <p>communications designer @ carnegie mellon</p>
+            </div>
+        </div>
+           <div class="pages-container">
+<!--              FIRST -->
+               <div class="work-section">
+                   <div class="work-text">
+                       <h2>let’s eat!</h2>
+                           <br>
+                       <div class="work-subtext">
+                           <p>creating a website with nutritional facts + personal favorite recipes designed to excite viewers to live a healthier lifestyle.</p> 
+                           <br>
+                           <br>
+<!--                           <p><span class="strike-span"><a href="food.html">click here to view &#8594;</a></span></p>-->
+                           <p>web link coming soon!</p>
+                           <br>
+                           <br>
+                           <h3>(HTML/CSS, procreate)</h3>
+                       </div>
+                   </div>
+                   <div class="work-wrapper">
+                      <img src="../Images/Play-Pictures/food.jpg">
+                   </div>
+                   <div class="clear"></div>
+               </div> 
+               <!--               NEXT-->
+               <div class="work-section">
+                   <div class="work-text">
+                       <h2>a twilight zone</h2>
+                           <br>
+                       <div class="work-subtext">
+                           <p>given a human body model, i chose to take a darker route in this photoshoot reimagination.</p> 
+                           <br>
+                           <br>
+                           <h3>(photography)</h3>
+                       </div>
+                   </div>
+                   <div class="work-wrapper">
+                       <div>
+                          <img class="mySlides" src="../Images/Play-Pictures/photoEight.JPG">
+                          <img class="mySlides" src="../Images/Play-Pictures/photoNine.JPG">
+                          <img class="mySlides" src="../Images/Play-Pictures/photoOne.JPG">
+                          <img class="mySlides" src="../Images/Play-Pictures/photoSeven.JPG">
+                          <img class="mySlides" src="../Images/Play-Pictures/photoThree.JPG">
+                       </div>
+<!--                       SLIDESHOW-->
+                    <script>
+                    var myIndex = 0;
+                    carousel();
+
+                    function carousel() {
+                      var i;
+                      var x = document.getElementsByClassName("mySlides");
+                      for (i = 0; i < x.length; i++) {
+                        x[i].style.display = "none";  
+                      }
+                      myIndex++;
+                      if (myIndex > x.length) {myIndex = 1}    
+                      x[myIndex-1].style.display = "block";  
+                      setTimeout(carousel, 1500);
+                    }
+                    </script>
+                   </div>
+                   <div class="clear"></div>
+               </div>
+<!--
+               NEXT
+               <div class="work-section">
+                   <div class="work-text">
+                       <h2>hadestown</h2>
+                           <br>
+                       <div class="work-subtext">
+                           <p>quotes taken from the Tony Award winning musical, their meanings communicated through simple color and type.</p> 
+                           <br>
+                           <br>
+                           <h3>(illustrator, photoshop)</h3>
+                       </div>
+                   </div>
+                   <div class="work-wrapper">
+                      <img src="../Images/Play-Pictures/personal.jpg">
+                   </div>
+                   <div class="clear"></div>
+               </div>
+-->
+<!--               NEXT-->
+               <div class="work-section">
+                   <div class="work-text">
+                       <h2>the piping plover</h2>
+                           <br>
+                       <div class="work-subtext">
+<!--                           <p>discovering how typography can be used through a variety of creative explorations.</p> -->
+                           <p>raising awareness for the endangered species, the piping plover, through both print illustration and motion graphics.</p>
+                           <br>
+                           <br>
+                           <h3>(print design, illustration, motion graphics)</h3>
+                       </div>
+                   </div>
+                   <div class="work-wrapper">
+                      <img src="../Images/Play-Pictures/piping-plover.jpg">
+                       <!--            piping plover animation embed-->
+                      <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/437967686?title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+                   </div>
+                   <div class="clear"></div>
+               </div> 
+<!--
+               NEXT
+               <div class="work-section">
+                   <div class="work-text">
+                       <h2>a twilight zone</h2>
+                           <br>
+                       <div class="work-subtext">
+                           <p>given a human body model, i chose to take a darker route in this photoshoot reimagination.</p> 
+                           <br>
+                           <br>
+                           <h3>(photography)</h3>
+                       </div>
+                   </div>
+                   <div class="work-wrapper">
+                       <div>
+                          <img class="mySlides" src="../Images/Play-Pictures/photoEight.JPG">
+                          <img class="mySlides" src="../Images/Play-Pictures/photoNine.JPG">
+                          <img class="mySlides" src="../Images/Play-Pictures/photoOne.JPG">
+                          <img class="mySlides" src="../Images/Play-Pictures/photoSeven.JPG">
+                          <img class="mySlides" src="../Images/Play-Pictures/photoThree.JPG">
+                       </div>
+-->
+
+<!--
+               <div class="work-section">
+                   <div class="work-text">
+                       <h2>for a blueberry muffin</h2>
+                           <br>
+                       <div class="work-subtext">
+                           <p>using color and illustration, i created a package for a blueberry muffin. designed to delight users as they enjoy their snack. </p> 
+                           <br>
+                           <br>
+                           <h3>(procreate, illustrator, photoshop)</h3>
+                       </div>
+                   </div>
+                   <div class="work-wrapper">
+                      <img src="../Images/Play-Pictures/blueberrythree.jpg">
+                      <img src="../Images/Play-Pictures/blueberrysecond.jpg">
+                      <img src="../Images/Play-Pictures/blueberry">
+                   </div>
+                   <div class="clear"></div>
+               </div>   
+-->
+             </div>
+    </div>
+  </body>
+</html>
