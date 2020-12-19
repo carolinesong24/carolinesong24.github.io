@@ -224,11 +224,10 @@ a {
     background-color: white;
 }
 
-/*
+
 .work-section:hover {
     background-color: #C9C7FF; 
 }
-*/
 
 .work-section:hover {
     cursor: pointer;
@@ -750,9 +749,9 @@ a {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(1, auto);
-    width: var(--mainWidth);
+/*    width: var(--mainWidth);*/
     max-width: 1450px;
-    grid-gap: 30px;
+    grid-row-gap: 30px;
 /*    background-color: #EDEDED;*/
 }
 
