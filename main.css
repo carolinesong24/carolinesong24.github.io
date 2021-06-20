@@ -229,6 +229,7 @@ a {
     background-color: white;
 }
 
+/*--------PURPLE WHEN HOVER––––––––––*/
 
 .work-section:hover {
     background-color: #C9C7FF; 
@@ -785,7 +786,7 @@ a {
     grid-template-rows: repeat(1, auto);
 /*    width: var(--mainWidth);*/
     max-width: 1450px;
-    grid-row-gap: 30px;
+    grid-row-gap: 15px;
 /*    background-color: #EDEDED;*/
 }
 
